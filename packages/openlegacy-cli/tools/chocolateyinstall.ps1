@@ -16,3 +16,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs # https://chocolatey.org/docs/helpers-install-chocolatey-zip-package
 Install-ChocolateyPath "$toolsDir/ol/bin" 'Machine' # Machine will assert administrative rights
+
+echo "*********************************************************************************************"
+echo "Note that the CLI require java 11, please make sure its installed and JAVA_HOME is configured"
+echo "*********************************************************************************************"
