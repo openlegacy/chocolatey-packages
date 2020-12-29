@@ -27,6 +27,11 @@ Install specific version:
 choco install openlegacy-cli --version=1.5.0
 ```
 
+Install `alpha` version (0.0.0-alpha):
+```console
+choco install openlegacy-cli --version=0.0.0-alpha --ignore-checksum
+```
+
 *OpenLegacy packages are also available at Chocolatey.org: https://chocolatey.org/packages/openlegacy-cli
 
 ---
