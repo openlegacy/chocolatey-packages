@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>openlegacy-cli</id>
+    <version>1.19.0</version>
+    <title>openlegacy-cli (Install)</title>
+    <authors>Openlegacy Technologies Ltd</authors>
+    <projectUrl>https://github.com/openlegacy/chocolatey-packages</projectUrl>
+    <iconUrl>https://ol-public-images.s3.amazonaws.com/logo-new-blue-no-text-2020-20-20.png</iconUrl>
+    <tags>openlegacy-cli ol-cli</tags>
+    <summary>Openlegacy Hub CLI</summary>
+    <description>The Hub, the all-in-one platform for managing legacy assets inclients' hybrid environment.
+     The Hub is powered by OpenLegacy’s patented API integration technology, trusted by enterprises to create digital services from legacy systems.
+      But with the Hub, accelerate past one-off integrations – and meet the“command center” for all of your legacy APIs</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
