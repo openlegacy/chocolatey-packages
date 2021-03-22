@@ -19,8 +19,8 @@ end.parse!
 # set vars
 template_path = options[:file]
 project = ENV['OL_PROJECT_NAME']
-version = ENV['OL_PROJECT_REVISION']
-s3_bucket = ENV['OL_PROJECT_PUBLIC_BUCKET']
+version = ENV['OL_REVISION']
+s3_bucket = ENV['OL_PUBLIC_BUCKET']
 
 # evaluate data
 url = "https://#{s3_bucket}.s3.amazonaws.com/#{project}/#{version}/windows/#{project}.zip"
