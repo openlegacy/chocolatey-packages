@@ -18,7 +18,7 @@ Install-ChocolateyZipPackage @packageArgs # https://chocolatey.org/docs/helpers-
 Install-ChocolateyPath "$toolsDir\ol\bin" 'Machine' # Machine will assert administrative rights
 
 # Git bash support
-Start-Process "$toolsDir\write_to_bash.bat" # Run script to add git bash_profile the 'ol' alias and autocomplete
+Start-Process "$toolsDir\ol\bin\write_to_bash.bat" # Run script to add git bash_profile the 'ol' alias and autocomplete
 
 echo "*********************************************************************************************"
 echo "Note that the CLI require java 11, please make sure its installed and JAVA_HOME is configured"
