@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://ol-public-artifacts.s3.amazonaws.com/openlegacy-cli/1.35.1/windows/openlegacy-cli.zip' # download url, HTTPS preferred
+$url        = 'https://ol-public-artifacts.s3.amazonaws.com/openlegacy-cli/1.36.0/windows/openlegacy-cli.zip' # download url, HTTPS preferred
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'openlegacy-cli*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 
-  checksum      = 'c6ce8c89a63043ddc352ed623388d646e6642f1a94ef021658029915521a2209'
+  checksum      = 'f1358f2a87590e619d90befd3cf55b8877c0ad5fb9d8203366ffe5917372d695'
   checksumType  = 'sha256' #default is md5, can also be sha1, sha256 or sha512
 }
 
@@ -19,6 +19,11 @@ Install-ChocolateyPath "$toolsDir\ol\bin" 'Machine' # Machine will assert admini
 
 # Git bash support
 Start-Process "$toolsDir\ol\bin\write_to_bash.bat" # Run script to add git bash_profile the 'ol' alias and autocomplete
+
+# remove connectors
+$connectors="$HOME/.ol/cli/connectors"
+echo "Removing outdated connectors at $connectors ..."
+Remove-Item $connectors -Recurse -ErrorAction Ignore
 
 echo "*********************************************************************************************"
 echo "Note that the CLI require java 11, please make sure its installed and JAVA_HOME is configured"
