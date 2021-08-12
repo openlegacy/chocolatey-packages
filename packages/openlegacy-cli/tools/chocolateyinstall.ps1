@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'openlegacy-cli*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 
-  checksum      = '61f7f99b4ead77ac20b8881051d06ac4b4ebeb6f6c97b18efd61e3b9ff00bc8c'
+  checksum      = '8af2decf0cd8007f366d129b7faa37cd6f1583ca0c600cdcee8a08885b531ff2'
   checksumType  = 'sha256' #default is md5, can also be sha1, sha256 or sha512
 }
 
