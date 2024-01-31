@@ -29,6 +29,6 @@ foreach ($i in $dirnames) {
 }
 
 echo "*******************************************************************************************************"
-echo "Note that the CLI require java 11 or higher, please make sure its installed and JAVA_HOME is configured"
+echo "Note that the CLI require java 17 or higher, please make sure its installed and JAVA_HOME is configured"
 echo "*******************************************************************************************************"
 
