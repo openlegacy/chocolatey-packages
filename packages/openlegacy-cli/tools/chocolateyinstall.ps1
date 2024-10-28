@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://ol-public-artifacts.s3.amazonaws.com/openlegacy-cli/3.0.0/windows/openlegacy-cli.zip' # download url, HTTPS preferred
+$url        = 'https://ol-public-artifacts.s3.amazonaws.com/openlegacy-cli/3.0.1/windows/openlegacy-cli.zip' # download url, HTTPS preferred
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'openlegacy-cli*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 
-  checksum      = '302758fe341fb2ea683bc40cbc2451c8497807ae747c2e86fe9b8c8f2a2d9132'
+  checksum      = '1ee56fd00376996f0c196a067f78b5ff65a13b3b542cf9a20e3ba6c39a4195ab'
   checksumType  = 'sha256' #default is md5, can also be sha1, sha256 or sha512
 }
 
